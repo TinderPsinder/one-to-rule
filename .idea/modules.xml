@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Eureka-server/EurekaServer.iml" filepath="$PROJECT_DIR$/../Eureka-server/EurekaServer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Gateway/Gateway.iml" filepath="$PROJECT_DIR$/../Gateway/Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../microservices/Eureka-server/EurekaServer.iml" filepath="$PROJECT_DIR$/../microservices/Eureka-server/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../microservices/Gateway/Gateway.iml" filepath="$PROJECT_DIR$/../microservices/Gateway/Gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cards-service/cards-service.iml" filepath="$PROJECT_DIR$/cards-service/cards-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/chats-service/chats-service.iml" filepath="$PROJECT_DIR$/chats-service/chats-service.iml" />
