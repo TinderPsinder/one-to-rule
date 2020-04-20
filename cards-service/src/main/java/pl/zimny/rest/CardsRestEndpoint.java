@@ -1,4 +1,4 @@
-package pl.zimny.cards;
+package pl.zimny.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

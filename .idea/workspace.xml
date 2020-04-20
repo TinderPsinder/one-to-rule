@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c67a85e8-9b3f-4670-8597-bba2a24596c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/pl/zimny/auth/AuthRestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/cards/CardsRestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/service/CardsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/chats/ChatRestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/service/ChatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/maps/MapsRestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/service/MapsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/payments/PaymentsRestEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/service/PaymentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/service/UsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/users/UsersRestEndpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="c67a85e8-9b3f-4670-8597-bba2a24596c9" name="Default Changelist" comment="rest configuration fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/pl/zimny/auth/AuthServiceMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/pl/zimny/auth/AuthServiceMainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/test/java/pl/zimny/auth/AuthServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/test/java/pl/zimny/auth/AuthServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/pl/zimny/auth/AuthServiceMainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/pl/zimny/auth/AuthServiceMainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/cards/CardsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/cards/CardsServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/pl/zimny/auth/AuthRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/pl/zimny/rest/AuthRestEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/cards/CardsRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards-service/src/main/java/pl/zimny/rest/CardsRestEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards-service/target/classes/pl/zimny/cards/CardsServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cards-service/target/classes/pl/zimny/cards/CardsServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/chats/ChatsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/chats/ChatsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chats-service/target/classes/pl/zimny/chats/ChatsServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/chats-service/target/classes/pl/zimny/chats/ChatsServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/maps/MapsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/maps/MapsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps-service/target/classes/pl/zimny/maps/MapsServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/maps-service/target/classes/pl/zimny/maps/MapsServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/payments/PaymentsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/payments/PaymentsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payments-service/target/classes/pl/zimny/payments/PaymentsServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/payments-service/target/classes/pl/zimny/payments/PaymentsServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/users/UsersServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/users/UsersServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users-service/target/classes/pl/zimny/users/UsersServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/target/classes/pl/zimny/users/UsersServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/chats/ChatRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/chats-service/src/main/java/pl/zimny/rest/ChatRestEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/maps/MapsRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/maps-service/src/main/java/pl/zimny/rest/MapsRestEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/payments/PaymentsRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/rest/PaymentsRestEndpoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/service/PaymentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payments-service/src/main/java/pl/zimny/service/PaymentsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/users/UsersRestEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/users-service/src/main/java/pl/zimny/rest/UsersRestEndpoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +85,7 @@
       <recent name="C:\stud\isi\microservices" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.UsersServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CardsServiceApplication">
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.zimny.auth.AuthServiceMainApplication" />
@@ -171,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587319294261</updated>
       <workItem from="1587319297248" duration="8251000" />
-      <workItem from="1587331926059" duration="5860000" />
+      <workItem from="1587331926059" duration="8497000" />
     </task>
     <task id="LOCAL-00001" summary="eureka and gateway">
       <created>1587332067853</created>
@@ -180,15 +177,34 @@
       <option name="project" value="LOCAL" />
       <updated>1587332067853</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="main rest enpoints">
+      <created>1587372079118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587372079118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="eureka and gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka and gateway" />
+    <MESSAGE value="main rest enpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="main rest enpoints" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2335" y="67" key="#Project_Structure" timestamp="1587319300996">
@@ -207,59 +223,61 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2630" y="379" width="500" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334197957" />
-    <state x="2505" y="114" key="CommitChangelistDialog2" timestamp="1587332065837">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="356" y="90" width="1129" height="811" key="CommitChangelistDialog2" timestamp="1587374601766">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2505" y="114" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587332065837" />
-    <state x="2258" y="173" width="1228" height="687" key="DiffContextDialog" timestamp="1587332316608">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="356" y="90" width="1129" height="811" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587374601766" />
+    <state x="338" y="173" width="1228" height="687" maximized="true" key="DiffContextDialog" timestamp="1587374584323">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2258" y="173" width="1228" height="687" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587332316608" />
+    <state x="338" y="173" width="1228" height="687" maximized="true" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587374584323" />
     <state x="2660" y="213" key="FileChooserDialogImpl" timestamp="1587331969552">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="213" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587331969552" />
     <state x="2660" y="213" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587319475991" />
-    <state width="1877" height="400" key="GridCell.Tab.0.bottom" timestamp="1587371667992">
+    <state width="1877" height="414" key="GridCell.Tab.0.bottom" timestamp="1587374656061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667992" />
-    <state width="1877" height="400" key="GridCell.Tab.0.center" timestamp="1587371667991">
+    <state width="1877" height="414" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656061" />
+    <state width="1877" height="414" key="GridCell.Tab.0.center" timestamp="1587374656059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667991" />
-    <state width="1877" height="400" key="GridCell.Tab.0.left" timestamp="1587371667991">
+    <state width="1877" height="414" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656059" />
+    <state width="1877" height="414" key="GridCell.Tab.0.left" timestamp="1587374656059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667991" />
-    <state width="1877" height="400" key="GridCell.Tab.0.right" timestamp="1587371667991">
+    <state width="1877" height="414" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656059" />
+    <state width="1877" height="414" key="GridCell.Tab.0.right" timestamp="1587374656060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667991" />
-    <state width="1877" height="400" key="GridCell.Tab.1.bottom" timestamp="1587371667992">
+    <state width="1877" height="414" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656060" />
+    <state width="1877" height="414" key="GridCell.Tab.1.bottom" timestamp="1587374656061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667992" />
-    <state width="1877" height="400" key="GridCell.Tab.1.center" timestamp="1587371667992">
+    <state width="1877" height="414" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656061" />
+    <state width="1877" height="414" key="GridCell.Tab.1.center" timestamp="1587374656061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667992" />
-    <state width="1877" height="400" key="GridCell.Tab.1.left" timestamp="1587371667992">
+    <state width="1877" height="414" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656061" />
+    <state width="1877" height="414" key="GridCell.Tab.1.left" timestamp="1587374656061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667992" />
-    <state width="1877" height="400" key="GridCell.Tab.1.right" timestamp="1587371667992">
+    <state width="1877" height="414" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656061" />
+    <state width="1877" height="414" key="GridCell.Tab.1.right" timestamp="1587374656061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="399" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334336411" />
-    <state width="1877" height="400" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587371667992" />
+    <state width="1877" height="414" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587374656061" />
     <state x="2258" y="173" key="MergeDialog" timestamp="1587332178565">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -277,10 +295,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="723" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587371936514" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587332308788">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587372095707">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587332308788" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587372095707" />
     <state x="2576" y="118" width="607" height="804" key="find.popup" timestamp="1587324017853">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -294,10 +313,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587371862508" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587371171789">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587374483354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587334076581" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587371171789" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587374483354" />
   </component>
 </project>

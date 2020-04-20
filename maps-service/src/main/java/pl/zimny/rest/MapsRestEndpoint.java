@@ -1,4 +1,4 @@
-package pl.zimny.maps;
+package pl.zimny.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,6 +12,7 @@ public class MapsRestEndpoint {
 
     private final MapsService mapsService;
 
+    //test endpoint
     @GetMapping(path = "/hello")
     public String hello() {
         return "Hello from maps service";

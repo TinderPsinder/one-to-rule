@@ -1,4 +1,4 @@
-package pl.zimny.chats;
+package pl.zimny.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,12 +15,12 @@ public class ChatRestEndpoint {
 
     //test endpoint
     @GetMapping(path = "/hello")
-    public String hello(){
+    public String hello() {
         return "Hello from chats service";
     }
 
     @GetMapping(path = "/history/{userId}")
-    public HttpStatus getChatHistory(@PathVariable Long userId){
+    public HttpStatus getChatHistory(@PathVariable Long userId) {
         return chatService.getChatHistory();
     }
 }

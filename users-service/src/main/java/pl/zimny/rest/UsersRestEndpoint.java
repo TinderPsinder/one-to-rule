@@ -1,4 +1,4 @@
-package pl.zimny.users;
+package pl.zimny.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,25 +13,26 @@ public class UsersRestEndpoint {
 
     private final UsersService usersService;
 
+    // test endpoint
     @GetMapping(path = "/hello")
-    public String hello(){
+    public String hello() {
         return "Hello from users service";
     }
 
 
-    @PostMapping(path ="/register")
+    @PostMapping(path = "/register")
     public HttpStatus registerUser() {
         return usersService.registerUser();
     }
 
     @PostMapping(path = "/report")
-    public HttpStatus reportUser(){
+    public HttpStatus reportUser() {
         return usersService.reportUser();
     }
 
     // only for admins
     @PostMapping(path = "/mischief")
-    public HttpStatus confirmMischief(){
+    public HttpStatus confirmMischief() {
         return usersService.confirmMischief();
     }
 
