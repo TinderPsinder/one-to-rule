@@ -12,10 +12,4 @@ public class AuthServiceMainApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AuthServiceMainApplication.class, args);
 	}
-
-	@GetMapping(path = "/hello")
-	public String hello(){
-		return "Hello from auth service";
-	}
-
 }

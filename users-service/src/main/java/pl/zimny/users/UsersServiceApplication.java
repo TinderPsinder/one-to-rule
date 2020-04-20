@@ -9,17 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
-@RestController
+@SpringBootApplication()
 public class UsersServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(UsersServiceApplication.class, args);
 	}
-
-	@GetMapping(path = "/hello")
-	public String hello(){
-		return "Hello from users service";
-	}
-
 }

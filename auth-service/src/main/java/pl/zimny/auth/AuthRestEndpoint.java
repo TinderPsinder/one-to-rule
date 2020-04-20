@@ -1,0 +1,13 @@
+package pl.zimny.auth;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AuthRestEndpoint {
+
+    @GetMapping(path = "/hello")
+    public String hello(){
+        return "Hello from auth service";
+    }
+}
