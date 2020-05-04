@@ -1,16 +1,28 @@
 package pl.zimny.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import pl.zimny.dao.ProfileRepository;
+import pl.zimny.model.Profile;
+import pl.zimny.model.ProfileDetails;
 
 @Service
+@RequiredArgsConstructor
 public class UsersService {
 
+    private final ProfileRepository profileRepository;
+
+    public Profile getUserProfile(Long userId){
+        return profileRepository.findByUserId(userId).orElse(null);
+    }
 
     public HttpStatus registerUser(){
         //validate user data
         // save user to the database
+        profileRepository.saveAndFlush( new Profile(1111L, new ProfileDetails("This is my first profile", "pictureId")));
         //send an activation link
+
         return HttpStatus.OK;
     }
 

@@ -16,9 +16,11 @@ public class FlywayConfig {
                 .configure()
                 .table(SCHEMA_VERSION_TABLE)
                 .outOfOrder(true)
+                .schemas("users")
                 .dataSource(theDataSource)
                 .locations(
-                        "classpath:db/migration")
+                        "classpath:db/migration",
+                        "classpath:db/insert")
                 .load();
         flyway.clean();
         flyway.baseline();
