@@ -7,6 +7,8 @@ import pl.zimny.dao.ProfileRepository;
 import pl.zimny.model.Profile;
 import pl.zimny.model.ProfileDetails;
 
+import java.util.Collections;
+
 @Service
 @RequiredArgsConstructor
 public class UsersService {
@@ -20,7 +22,7 @@ public class UsersService {
     public HttpStatus registerUser(){
         //validate user data
         // save user to the database
-        profileRepository.saveAndFlush( new Profile(1111L, new ProfileDetails("This is my first profile", "pictureId")));
+        profileRepository.saveAndFlush( new Profile(1111L, new ProfileDetails("This is my first profile", Collections.emptyList())));
         //send an activation link
 
         return HttpStatus.OK;
