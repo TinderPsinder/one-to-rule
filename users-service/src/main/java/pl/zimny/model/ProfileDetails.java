@@ -8,7 +8,10 @@ import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,11 +26,17 @@ public class ProfileDetails extends AbstractEntity{
     @Column
     String description;
 
-    @Column
-    String picture;
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "profileDetails")
+    List<Picture> pictures;
 
-    public ProfileDetails(String description, String picture){
+    @Column
+    String breed;
+
+    @Column
+    Integer age;
+
+    public ProfileDetails(String description, List<Picture> pictures){
         this.description = description;
-        this.picture = picture;
+        this.pictures = pictures;
     }
 }
