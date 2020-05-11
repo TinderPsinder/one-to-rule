@@ -1,1 +1,1 @@
-web: java -jar target/chats-service-1.0.0.jar
+web: java -jar target/users-service-1.0.0.jar --Dspring.config.location=classpath:/application-prod.yml
