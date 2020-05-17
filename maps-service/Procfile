@@ -1,1 +1,1 @@
-web: java -jar target/maps-service-1.0.0.jar --Dspring.config.location=classpath:/application-prod.yml
+web: java -Dserver.port=$PORT  $JAVA_OPTS -jar target/maps-service-0.0.1-SNAPSHOT.jar --spring.config.name=application-prod
