@@ -1,1 +1,1 @@
-web: java -jar target/users-service-1.0.0.jar --Dspring.config.location=classpath:/application-prod.yml
+web: java -Dserver.port=$PORT --Dspring.config.location=classpath:/application-prod.yml -jar target/users-service-0.0.1.jar
