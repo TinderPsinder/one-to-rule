@@ -9,11 +9,11 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5433/psinder
     username: postgres
-    password: postgres
+    password: admin
     driverClassName: org.postgresql.Driver
 server:
   port: 8098
-
+#
 eureka:
   client:
     registerWithEureka: true
