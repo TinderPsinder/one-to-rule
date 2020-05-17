@@ -35,7 +35,7 @@ CREATE TABLE users.pictures (
 );
 
 
-ALTER TABLE users.pictures OWNER TO postgres;
+--ALTER TABLE users.pictures OWNER TO postgres;
 
 --
 -- Name: pictures_id_seq; Type: SEQUENCE; Schema: users; Owner: postgres
@@ -50,7 +50,7 @@ CREATE SEQUENCE users.pictures_id_seq
     CACHE 1;
 
 
-ALTER TABLE users.pictures_id_seq OWNER TO postgres;
+--ALTER TABLE users.pictures_id_seq OWNER TO postgres;
 
 --
 -- Name: pictures_id_seq; Type: SEQUENCE OWNED BY; Schema: users; Owner: postgres
@@ -73,7 +73,7 @@ CREATE TABLE users.users (
 );
 
 
-ALTER TABLE users.users OWNER TO postgres;
+--ALTER TABLE users.users OWNER TO postgres;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE; Schema: users; Owner: postgres
@@ -88,7 +88,7 @@ CREATE SEQUENCE users.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE users.users_id_seq OWNER TO postgres;
+--ALTER TABLE users.users_id_seq OWNER TO postgres;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: users; Owner: postgres
