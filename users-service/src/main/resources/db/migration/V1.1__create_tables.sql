@@ -28,7 +28,7 @@ SET default_table_access_method = heap;
 -- Name: pictures; Type: TABLE; Schema: users; Owner: postgres
 --
 
-CREATE TABLE users.pictures (
+CREATE TABLE users.picture (
     id integer NOT NULL,
     url text NOT NULL,
     "userId" integer
@@ -41,7 +41,7 @@ CREATE TABLE users.pictures (
 -- Name: pictures_id_seq; Type: SEQUENCE; Schema: users; Owner: postgres
 --
 
-CREATE SEQUENCE users.pictures_id_seq
+CREATE SEQUENCE users.picture_id_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -56,14 +56,14 @@ CREATE SEQUENCE users.pictures_id_seq
 -- Name: pictures_id_seq; Type: SEQUENCE OWNED BY; Schema: users; Owner: postgres
 --
 
-ALTER SEQUENCE users.pictures_id_seq OWNED BY users.pictures.id;
+ALTER SEQUENCE users.picture_id_seq OWNED BY users.picture.id;
 
 
 --
 -- Name: users; Type: TABLE; Schema: users; Owner: postgres
 --
 
-CREATE TABLE users.users (
+CREATE TABLE users.user (
     "userId" integer NOT NULL,
     description text,
     breed text,
@@ -79,7 +79,7 @@ CREATE TABLE users.users (
 -- Name: users_id_seq; Type: SEQUENCE; Schema: users; Owner: postgres
 --
 
-CREATE SEQUENCE users.users_id_seq
+CREATE SEQUENCE users.user_id_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -94,21 +94,21 @@ CREATE SEQUENCE users.users_id_seq
 -- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: users; Owner: postgres
 --
 
-ALTER SEQUENCE users.users_id_seq OWNED BY users.users."userId";
+ALTER SEQUENCE users.user_id_seq OWNED BY users.user."userId";
 
 
 --
 -- Name: pictures id; Type: DEFAULT; Schema: users; Owner: postgres
 --
 
-ALTER TABLE ONLY users.pictures ALTER COLUMN id SET DEFAULT nextval('users.pictures_id_seq'::regclass);
+ALTER TABLE ONLY users.picture ALTER COLUMN id SET DEFAULT nextval('users.picture_id_seq'::regclass);
 
 
 --
 -- Name: users userId; Type: DEFAULT; Schema: users; Owner: postgres
 --
 
-ALTER TABLE ONLY users.users ALTER COLUMN "userId" SET DEFAULT nextval('users.users_id_seq'::regclass);
+ALTER TABLE ONLY users.user ALTER COLUMN "userId" SET DEFAULT nextval('users.user_id_seq'::regclass);
 
 
 
@@ -118,38 +118,38 @@ ALTER TABLE ONLY users.users ALTER COLUMN "userId" SET DEFAULT nextval('users.us
 -- Name: pictures_id_seq; Type: SEQUENCE SET; Schema: users; Owner: postgres
 --
 
-SELECT pg_catalog.setval('users.pictures_id_seq', 122, true);
+SELECT pg_catalog.setval('users.picture_id_seq', 122, true);
 
 
 --
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: users; Owner: postgres
 --
 
-SELECT pg_catalog.setval('users.users_id_seq', 16, true);
+SELECT pg_catalog.setval('users.user_id_seq', 16, true);
 
 
 --
 -- Name: pictures pictures_pkey; Type: CONSTRAINT; Schema: users; Owner: postgres
 --
 
-ALTER TABLE ONLY users.pictures
-    ADD CONSTRAINT pictures_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY users.picture
+    ADD CONSTRAINT picture_pkey PRIMARY KEY (id);
 
 
 --
 -- Name: users users_pkey; Type: CONSTRAINT; Schema: users; Owner: postgres
 --
 
-ALTER TABLE ONLY users.users
-    ADD CONSTRAINT users_pkey PRIMARY KEY ("userId");
+ALTER TABLE ONLY users.user
+    ADD CONSTRAINT user_pkey PRIMARY KEY ("userId");
 
 
 --
 -- Name: pictures pictures_user_id_fkey; Type: FK CONSTRAINT; Schema: users; Owner: postgres
 --
 
-ALTER TABLE ONLY users.pictures
-    ADD CONSTRAINT pictures_user_id_fkey FOREIGN KEY ("userId") REFERENCES users.users("userId");
+ALTER TABLE ONLY users.picture
+    ADD CONSTRAINT picture_user_id_fkey FOREIGN KEY ("userId") REFERENCES users.user("userId");
 
 
 --
