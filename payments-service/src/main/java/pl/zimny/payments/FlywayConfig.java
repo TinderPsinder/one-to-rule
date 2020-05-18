@@ -16,7 +16,6 @@ public class FlywayConfig {
                 .configure()
                 .table(SCHEMA_VERSION_TABLE)
                 .outOfOrder(true)
-                .schemas("payments")
                 .dataSource(theDataSource)
                 .locations(
                         "classpath:db/migration",
