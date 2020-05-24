@@ -1,11 +1,8 @@
-package pl.zimny.rest;
+package pl.zimny.users;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.zimny.model.Profile;
 import pl.zimny.service.UsersService;
 
@@ -13,7 +10,7 @@ import pl.zimny.service.UsersService;
 @RequiredArgsConstructor
 public class UsersRestEndpoint {
 
-    private final UsersService usersService;
+    private UsersService usersService;
 
     // test endpoint
     @GetMapping(path = "/hello")
