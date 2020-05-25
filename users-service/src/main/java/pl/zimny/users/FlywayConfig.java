@@ -22,6 +22,7 @@ public class FlywayConfig {
                         "classpath:db/migration",
                         "classpath:db/insert")
                 .load();
+
         flyway.clean();
         flyway.baseline();
         flyway.migrate();

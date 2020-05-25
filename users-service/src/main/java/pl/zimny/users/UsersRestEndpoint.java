@@ -7,7 +7,6 @@ import pl.zimny.model.Profile;
 import pl.zimny.service.UsersService;
 
 @RestController
-@RequiredArgsConstructor
 public class UsersRestEndpoint {
 
     private UsersService usersService;
@@ -17,7 +16,6 @@ public class UsersRestEndpoint {
     public String hello() {
         return "Hello from users service";
     }
-
 
     @PostMapping(path = "/register")
     public HttpStatus registerUser() {
@@ -39,5 +37,4 @@ public class UsersRestEndpoint {
     public HttpStatus confirmMischief() {
         return usersService.confirmMischief();
     }
-
 }
