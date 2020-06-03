@@ -3,10 +3,19 @@ package pl.zimny.service;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import pl.zimny.dao.MatchRepository;
+import pl.zimny.dao.ReactionRepository;
+import pl.zimny.model.Match;
+import pl.zimny.model.Reaction;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class CardsService {
+
+    private final MatchRepository matchRepository;
+    private final ReactionRepository reactionRepository;
 
     public HttpStatus createUserCard(){
         //validate card data
@@ -14,9 +23,8 @@ public class CardsService {
         return  HttpStatus.OK;
     }
 
-    public HttpStatus getAllMatches(){
-        // retrieve all matches from the database
-        return  HttpStatus.OK;
+    public List<Match> getAllMatches(Long userId){
+        return matchRepository.findAllByUser1Id(userId);
     }
 
     public HttpStatus getClosestUsers(){
@@ -26,10 +34,12 @@ public class CardsService {
         return  HttpStatus.OK;
     }
 
-    public HttpStatus saveLike(){
-        //validate like data
+    public HttpStatus saveReaction(Reaction reaction){
         //save like to the database
-        // varify if match if yes save to the database
+        reactionRepository.save(reaction);
+        if(reactionRepository.findAllByReactingUserIdAndLikeTrue(reaction.getSwipedUserId()).isPresent()){
+            matchRepository.save(new Match(reaction.getReactingUserId(), reaction.getSwipedUserId()));
+        };
         return HttpStatus.OK;
     }
 }
