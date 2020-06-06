@@ -18,7 +18,6 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 @Table(name = "match", schema = "cards")
 public class Match {
 
