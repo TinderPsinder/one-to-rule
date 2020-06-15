@@ -17,29 +17,28 @@ public class CardsService {
     private final MatchRepository matchRepository;
     private final ReactionRepository reactionRepository;
 
-    public HttpStatus createUserCard(){
-        //validate card data
-        // save card to the database
-        return  HttpStatus.OK;
-    }
-
     public List<Match> getAllMatches(Long userId){
         return matchRepository.findAllByUser1Id(userId);
     }
 
-    public HttpStatus getClosestUsers(){
-        // ask maps service for the users
-        // retrieve from the database the users that I didnt like?
-        // filter users that i didnt like?
-        return  HttpStatus.OK;
+    public List<Reaction> getAllDislikes(Long userId){
+        return reactionRepository.findAllByReactingUserIdAndLikeFalse(userId);
+    }
+    public List<Reaction> getAllLikes(Long userId){
+        return reactionRepository.findAllByReactingUserIdAndLikeTrue(userId);
     }
 
     public HttpStatus saveReaction(Reaction reaction){
         //save like to the database
         reactionRepository.save(reaction);
-        if(reactionRepository.findAllByReactingUserIdAndLikeTrue(reaction.getSwipedUserId()).isPresent()){
+        if(reactionRepository.findAllByReactingUserIdAndLikeTrue(reaction.getSwipedUserId()).stream().anyMatch(re -> re.getSwipedUserId().equals(reaction.getReactingUserId()))){
             matchRepository.save(new Match(reaction.getReactingUserId(), reaction.getSwipedUserId()));
-        };
+        }
+        return HttpStatus.OK;
+    }
+
+    public HttpStatus destroyAllReactions(){
+        reactionRepository.deleteAll();
         return HttpStatus.OK;
     }
 }

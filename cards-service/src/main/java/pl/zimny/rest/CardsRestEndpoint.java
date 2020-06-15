@@ -29,19 +29,24 @@ public class CardsRestEndpoint {
     public List<Match> getAllMatches(@PathVariable Long userId) {
         return cardsService.getAllMatches(userId);
     }
-
-    @PostMapping(path = "/card")
-    public HttpStatus createCard() {
-        return cardsService.createUserCard();
-    }
-
-    @GetMapping(path = "/closest")
-    public HttpStatus getClosestUsers() {
-        return cardsService.getClosestUsers();
-    }
-
     @PostMapping(path = "/reaction")
     public HttpStatus saveReaction(@RequestBody Reaction reaction) {
         return cardsService.saveReaction(reaction);
+    }
+
+    @GetMapping(path = "/like/{userId}")
+    public List<Reaction> getAllLikes(@PathVariable Long userId) {
+        return cardsService.getAllLikes(userId);
+    }
+
+    @GetMapping(path = "/like/{userId}")
+    public List<Reaction> getAllDislikes(@PathVariable Long userId) {
+        return cardsService.getAllDislikes(userId);
+    }
+
+
+    @GetMapping(path = "/destroy")
+    public HttpStatus destroyAllReactions(){
+        return cardsService.destroyAllReactions();
     }
 }
